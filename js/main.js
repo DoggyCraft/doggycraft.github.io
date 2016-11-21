@@ -39,27 +39,27 @@ jQuery(document).ready(function($){
 	    "animation": "Tricks",
 	    "bg_width": 0,
 	    "fg_width": 0.01,
-	    "circle_bg_color": "rgba(36, 255, 209, 0.2))",
+	    "circle_bg_color": "rgba(0, 0, 0, 1)",
 	    "circle_bg_fill_color": "rgba(255, 255, 255, 0)",
 	    "time": {
 	        "Days": {
 	            "text": "Days",
-	            "color": "#24FFD1",
+	            "color": "#BD0000",
 	            "show": true
 	        },
 	        "Hours": {
 	            "text": "Hrs",
-	            "color": "#24FFD1",
+	            "color": "#BD0000",
 	            "show": true
 	        },
 	        "Minutes": {
 	            "text": "Mins",
-	            "color": "#24FFD1",
+	            "color": "#BD0000",
 	            "show": true
 	        },
 	        "Seconds": {
 	            "text": "Secs",
-	            "color": "#24FFD1",
+	            "color": "#BD0000",
 	            "show": true
 	        }
 	    }
