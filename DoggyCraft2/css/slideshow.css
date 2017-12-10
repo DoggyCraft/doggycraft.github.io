@@ -1,0 +1,53 @@
+.item-1, 
+.item-2, 
+.item-3,
+.item-4 {
+  position: absolute;
+  display: block;
+	
+  
+  width: 50%;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+.item-4{
+	animation-name: anim-4;
+}
+
+@keyframes anim-1 {
+	0%, 6.25% { left: 0%; opacity: 0; }
+  6.25%,18.75% { left: 25%; opacity: 1; }
+  25%, 100% { left: 50%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 25% { left: 0%; opacity: 0; }
+  31.25%, 43.75% { left: 25%; opacity: 1; }
+  50%, 100% { left: 50%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 50% { left: 0%; opacity: 0; }
+  56.25%, 68.75% { left: 25%; opacity: 1; }
+  75%, 100% { left: 50%; opacity: 0; }
+}
+
+@keyframes anim-4 {
+	0%, 75% { left: 0%; opacity: 0; }
+  81.25%, 93.75% { left: 25%; opacity: 1; }
+  100% { left: 50%; opacity: 0; }
+}
