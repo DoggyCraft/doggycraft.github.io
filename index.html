@@ -1,62 +1,182 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<title>DoggyCraft - Et anderledes community!</title>
-	<meta name="description" content="DoggyCraft is a community where you can get to meet and play, with your friends and gather new friends!">
-    <meta name="author" content="DoggyCraft Community">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<style>
-	
-	</style>
-</head>
-<body>
-	<center>
-		<div class="container text-center">
-			<div class="span12 text-center">
-					<img class="img-responsive" src="pictures/spille.png"></a>
-					<br>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required Metadata -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<!-- Other metadata -->
+		<title>DoggyCraft - Et anderledes community!</title>
+		<meta property="og:site_name" content="DoggyCraft">
+		<meta name="application-name" content="DoggyCraft">
+		<meta property="og:title" content="DoggyCraft - Et anderledes community!">
+		<meta name="description" content="DoggyCraft is a community where you can get to meet and play, with your friends and gather new friends!">
+		<meta name="og:description" content="DoggyCraft is a community where you can get to meet and play, with your friends and gather new friends!">
+		<meta name="author" content="DoggyCraft">
+		<meta name="theme-color" content="#5865F2">
+		<meta name="msapplication-TileColor" content="#5865F2">
+		<meta property="og:url" content="https://doggycraft.dk">
+		<link rel="canonical" href="https://doggycraft.dk">
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="img/favicons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="img/favicons/favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="img/favicons/favicon-128.png" sizes="128x128">
+		<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+		<meta name="msapplication-square70x70logo" content="img/favicons/mstile-70x70.png">
+		<meta name="msapplication-square150x150logo" content="img/favicons/mstile-150x150.png">
+		<meta name="msapplication-wide310x150logo" content="img/favicons/mstile-310x150.png">
+		<meta name="msapplication-square310x310logo" content="img/favicons/mstile-310x310.png">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.12.1/css/all.min.css">
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light mb-3">
+			<div class="container justify-content-center">
+				<div class="row">
+					<div class="col-md-12 align-items-center">
+						<img class="img-fluid" src="img/logo3.png" alt="DoggyCraft's Logo">
+					</div>
+				</div>
 			</div>
-			<div class="row">
-				<div class="span4 text-center">
-						<a id="DoggyCraft" href="DoggyCraft"><img class="img-responsive" src="pictures/DoggyCraftLogo.png"></a>
-						<br>
+		</nav>
+
+		<!-- Page Content -->
+		<div class="container">
+			<div class="minecraft-server-info">
+				<div class="row justify-content-center pb-3">
+					<div class="col-md-6 minecraft-input">
+						<div class="minecraft-input-text">
+							Server Name
+						</div>
+						<div class="minecraft-input-box">
+							<div class="minecraft-input-box-text">
+								<span>DoggyCraft</span>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="span4 text-center">
-						<a id="Deleted" href=""><img class="img-responsive" src="pictures/DoggyCraftLogo2.png"></a>
-						<br>
-				</div>
-				<div class="span4 text-center">
-						<a id="WoD" href="WorldOfDoggyCraft"><img class="img-responsive" src="pictures/WorldOfDoggyCraftLogo.png"></a>
-						<br>
-				</div>
-				<div class="span4 text-center">
-						<a id="TeamDoggyCraft" href="TeamDoggyCraft"><img class="img-responsive" src="pictures/TeamDoggyCraftLogo.png"></a>
-						<br>
+				<div class="row justify-content-center">
+					<div class="col-md-6 minecraft-input">
+						<div class="minecraft-input-text">
+							Server Address
+						</div>
+						<div class="minecraft-input-box">
+							<div class="minecraft-input-box-text">
+								<span>doggycraft.dk</span>
+							</div>
+							<div class="minecraft-input-box-button minecraft-button">
+								<div class="minecraft-button-title">
+									<span>Copy</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="span12 text-center">
-						<a id="PlugDJ" href="https://plug.dj/doggycraftdk"><img class="img-responsive" src="pictures/PlugDJLogo.png"></a>
+			<div class="row justify-content-center pt-3">
+				<div class="col-md-3 discord">
+					<div class="discord-button minecraft-button">
+						<div class="minecraft-button-title">
+							<span>Discord</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 twitch">
+					<div class="twitch-button minecraft-button">
+						<div class="minecraft-button-title">
+							<span>Twitch</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center pt-3">
+				<div class="col-md-6 youtube">
+					<div class="youtube-button minecraft-button">
+						<div class="minecraft-button-title">
+							<span>YouTube</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</center>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-76220197-4', 'auto');
-	  ga('require', 'linkid');
-	  ga('send', 'pageview');
-	</script>
-</body>
+		<!-- Footer -->
+		<footer class="footer text-center pt-3 pb-2 mt-3 fixed-bottom">
+			<div class="container">
+				Copyright &#169; 2022 DoggyCraft
+			</div>
+		</footer>
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Custom scripts -->
+		<script src="js/main.js"></script>
+		<!-- Bootstrap Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- FitText -->
+		<script src="js/jquery.fittext.js"></script>
+
+		<script>
+			$(".minecraft-input-box-text").fitText(2.4);
+			$(".minecraft-input-text").fitText(3);
+			$(".minecraft-input-box-button-title").fitText(0.3);
+
+			$(".minecraft-input-box-button").click(function(){
+				if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+					navigator.clipboard.writeText("doggycraft.dk")
+							.then(() => {
+								alert("Copied the address!");
+							})
+							.catch(() => {
+								alert("Could not copy the address...");
+							});
+				}
+				else {
+					alert("Could not copy the address...");
+				}
+			});
+
+			$(".discord-button").click(function(){
+				window.open("https://discord.gg/5zR89pv", '_blank');
+			});
+			$(".twitch-button").click(function(){
+				window.open("https://twitch.tv/doggycraftdk", '_blank');
+			});
+			$(".youtube-button").click(function(){
+				window.open("https://youtube.com/DoggyCraftDK", '_blank');
+			});
+			$(".vote-button").click(function(){
+				window.open("https://minecraftlist.dk/vote/1804653e-0879-4198-860a-765600031e18", '_blank');
+				window.open("https://minecraftlist.org/vote/1577", '_blank');
+				window.open("https://minecraftservers.org/vote/211341", '_blank');
+				window.open("https://minecraft-server-list.com/server/290100/vote/", '_blank');
+				window.open("https://minecraft-server.net/vote/DogOnFire/", '_blank');
+				window.open("https://minecraft-mp.com/server/75843/vote/", '_blank');
+				window.open("https://minecraftlist.dk/vote/1804653e-0879-4198-860a-765600031e18", '_blank');
+			});
+		</script>
+	</body>
 </html>
