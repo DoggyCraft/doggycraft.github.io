@@ -154,6 +154,20 @@ footer {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
+.votesite-button-animate {
+  -webkit-animation: vote-button-anim 1s;
+  animation: vote-button-anim 1s;
+}
+
+@keyframes vote-button-anim {
+  0% {left: -100vw;}
+  100% {left: 0;}
+}
+@-webkit-keyframes vote-button-anim {
+  0% {left: -100vw;}
+  100% {left: 0;}
+}
+
 /* Media query */
 
 @media screen and (min-width: 0px) and (max-width: 400px) {

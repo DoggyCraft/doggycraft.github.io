@@ -37,12 +37,23 @@ $(".youtube-button").click(function(){
     window.open("https://youtube.com/DoggyCraftDK", '_blank');
 });
 $(".votesite-button").click(function(e) {
-    console.log(e);
-    console.log(e.currentTarget.dataset.url);
     window.open(e.currentTarget.dataset.url);
 });
 $(".vote-button").click(function(){
     $(".vote-modal-container").css("display", "flex");
+
+    $(".vote-modal .col-md-6").each(function(index) {
+        var elem = $(this);
+        elem.css("left", "-100vw");
+        setTimeout(function() {
+            elem.addClass("votesite-button-animate");
+            elem.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+                elem.removeClass('votesite-button-animate');
+                elem.css("left", "unset");
+            });
+        }, index * 150)
+    });
+
 });
 $(".vote-modal-container-background").click(function(){
     $(".vote-modal-container").css("display", "none");
