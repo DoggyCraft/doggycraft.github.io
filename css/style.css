@@ -37,18 +37,24 @@ footer {
   border-width: 2px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
-  flex-direction: column;
+  flex-direction: row;
 
   text-align: left;
   padding-left: 1vw;
 }
 
+.minecaft-input-server-address-mobile .minecraft-input-box {
+  aspect-ratio: unset;
+}
+
 .minecraft-input-box-text {
   color: #FEFEFE;
+  padding-top: 0.06em;
 
-  display: table-cell;
+  display: block;
+  width: 65%;
 }
 
 .minecraft-input-box-text span {
@@ -70,11 +76,20 @@ footer {
 }
 
 .minecraft-input-box-button {
-  position: absolute;
-  right: 0;
-  margin-right: 30px;
+  /*position: absolute;*/
+  /*right: 0;*/
+  /*margin-right: 30px;*/
+  width: 30%;
 
-  height: 45%;
+  /*height: 45%;*/
+}
+
+.minecaft-input-server-address-mobile .minecraft-input-box-button {
+  position: unset;
+  right: unset;
+  margin-right: unset;
+  height: 100%;
+  width: 100%;
 }
 
 /* Mouse over */
@@ -93,7 +108,7 @@ footer {
   padding-left: .4em;
   padding-right: .4em;
   padding-bottom: calc(4px + .2em);
-  padding-top: .2em;
+  padding-top: .3em;
   text-align: center;
 
   color: #DDD;
@@ -103,4 +118,54 @@ footer {
 .minecraft-button .minecraft-button-title span {
   vertical-align: middle;
 }
+
+/* Vote modal */
+.vote-modal-container {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.vote-modal-container .container {
+  z-index: 3;
+}
+
+.vote-modal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.vote-modal-container-background {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* Media query */
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .minecaft-input-server-address-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .minecaft-input-server-address-mobile {
+    display: none;
+  }
+}
+
 

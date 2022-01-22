@@ -1,10 +1,12 @@
-$(".minecraft-input-box-text").fitText(2.4);
+$(".minecraft-input-box-text").fitText(1.3);
 $(".minecraft-input-text").fitText(3);
-$(".minecraft-input-box-button-title").fitText(0.3);
+$(".minecaft-input-server-address-desktop .minecraft-input-box-button > .minecraft-button-title").fitText(0.7);
 
 var lineheight_fit = function () {
     $(".minecraft-input-box-text > span").css("line-height", $(".minecraft-input-box-text > span").css("font-size"));
     $(".minecraft-button-title > span").css("line-height", $(".minecraft-button-title > span").css("font-size"));
+
+    $(".minecaft-input-server-address-mobile .minecraft-input-box").css("height", $(".minecraft-server-info .minecraft-input-box").css("height"));
 }
 lineheight_fit();
 $(window).on('resize orientationchange', lineheight_fit);
@@ -34,12 +36,14 @@ $(".twitch-button").click(function(){
 $(".youtube-button").click(function(){
     window.open("https://youtube.com/DoggyCraftDK", '_blank');
 });
+$(".votesite-button").click(function(e) {
+    console.log(e);
+    console.log(e.currentTarget.dataset.url);
+    window.open(e.currentTarget.dataset.url);
+});
 $(".vote-button").click(function(){
-    window.open("https://minecraftlist.dk/vote/1804653e-0879-4198-860a-765600031e18", '_blank');
-    window.open("https://minecraftlist.org/vote/1577", '_blank');
-    window.open("https://minecraftservers.org/vote/211341", '_blank');
-    window.open("https://minecraft-server-list.com/server/290100/vote/", '_blank');
-    window.open("https://minecraft-server.net/vote/DogOnFire/", '_blank');
-    window.open("https://minecraft-mp.com/server/75843/vote/", '_blank');
-    window.open("https://minecraftlist.dk/vote/1804653e-0879-4198-860a-765600031e18", '_blank');
+    $(".vote-modal-container").css("display", "flex");
+});
+$(".vote-modal-container-background").click(function(){
+    $(".vote-modal-container").css("display", "none");
 });

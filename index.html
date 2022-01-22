@@ -65,11 +65,15 @@
 		<!-- Page Content -->
 		<div class="container">
 			<div class="minecraft-server-info">
-				<div class="row justify-content-center pb-3">
+				<div class="row justify-content-center">
 					<div class="col-md-6 minecraft-input">
 						<div class="minecraft-input-text">
 							Server Name
 						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center pb-3">
+					<div class="col-md-6 minecraft-input">
 						<div class="minecraft-input-box">
 							<div class="minecraft-input-box-text">
 								<span>DoggyCraft</span>
@@ -77,15 +81,46 @@
 						</div>
 					</div>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-md-6 minecraft-input">
-						<div class="minecraft-input-text">
-							Server Address
-						</div>
-						<div class="minecraft-input-box">
-							<div class="minecraft-input-box-text">
-								<span>doggycraft.dk</span>
+				<div class="minecaft-input-server-address-desktop">
+					<div class="row justify-content-center">
+						<div class="col-md-6 minecraft-input">
+							<div class="minecraft-input-text">
+								Server Address
 							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-6 minecraft-input">
+							<div class="minecraft-input-box">
+								<div class="minecraft-input-box-text">
+									<span>doggycraft.dk</span>
+								</div>
+								<div class="minecraft-input-box-button minecraft-button">
+									<div class="minecraft-button-title">
+										<span>Copy</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="minecaft-input-server-address-mobile">
+					<div class="row justify-content-center">
+						<div class="col-md-6 minecraft-input">
+							<div class="minecraft-input-text">
+								Server Address
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-sm-4 minecraft-input">
+							<div class="minecraft-input-box">
+								<div class="minecraft-input-box-text">
+									<span>doggycraft.dk</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2 minecraft-input d-flex justify-content-center align-items-center">
 							<div class="minecraft-input-box-button minecraft-button">
 								<div class="minecraft-button-title">
 									<span>Copy</span>
@@ -112,7 +147,14 @@
 				</div>
 			</div>
 			<div class="row justify-content-center pt-3">
-				<div class="col-md-6 youtube">
+				<div class="col-md-3 vote">
+					<div class="vote-button minecraft-button">
+						<div class="minecraft-button-title">
+							<span>Vote</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 youtube">
 					<div class="youtube-button minecraft-button">
 						<div class="minecraft-button-title">
 							<span>YouTube</span>
@@ -120,6 +162,69 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<!-- vote modal -->
+		<div class="vote-modal-container" style="display: none">
+			<div class="container">
+				<div class="vote-modal">
+					<div class="row justify-content-center pb-1">
+						<div class="col-md-6">
+							<div class="votesite-button minecraft-button" data-url="https://minecraftlist.dk/vote/1804653e-0879-4198-860a-765600031e18">
+								<div class="minecraft-button-title">
+									<span>Minecraft List (dk)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center pb-1">
+						<div class="col-md-6">
+							<div class="votesite-button minecraft-button" data-url="https://minecraftlist.org/vote/1577">
+								<div class="minecraft-button-title">
+									<span>Minecraft List (org)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center pb-1">
+						<div class="col-md-6">
+							<div class="votesite-button minecraft-button" data-url="https://minecraftservers.org/vote/211341">
+								<div class="minecraft-button-title">
+									<span>Minecraft Servers</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center pb-1">
+						<div class="col-md-6">
+							<div class="votesite-button minecraft-button" data-url="https://minecraft-server-list.com/server/290100/vote/">
+								<div class="minecraft-button-title">
+									<span>Minecraft Server List</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center pb-1">
+						<div class="col-md-6">
+							<div class="votesite-button minecraft-button" data-url="https://minecraft-server.net/vote/DogOnFire/">
+								<div class="minecraft-button-title">
+									<span>Minecraft Server</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-6">
+							<div class="votesite-button minecraft-button" data-url="https://minecraft-mp.com/server/75843/vote/">
+								<div class="minecraft-button-title">
+									<span>Minecraft-MP</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="vote-modal-container-background"></div>
 		</div>
 
 		<!-- Footer -->
