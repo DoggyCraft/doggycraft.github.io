@@ -2,6 +2,14 @@ $(".minecraft-input-box-text").fitText(2.4);
 $(".minecraft-input-text").fitText(3);
 $(".minecraft-input-box-button-title").fitText(0.3);
 
+var lineheight_fit = function () {
+    $(".minecraft-input-box-text > span").css("line-height", $(".minecraft-input-box-text > span").css("font-size"));
+    $(".minecraft-button-title > span").css("line-height", $(".minecraft-button-title > span").css("font-size"));
+}
+lineheight_fit();
+$(window).on('resize orientationchange', lineheight_fit);
+
+
 $(".minecraft-input-box-button").click(function(){
     if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText("doggycraft.dk")

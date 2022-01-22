@@ -90,14 +90,17 @@ footer {
 .minecraft-button .minecraft-button-title {
   width: 100%;
   height: 100%;
-  padding-bottom: .3em;
   padding-left: .4em;
   padding-right: .4em;
-  padding-top: .5em;
+  padding-bottom: calc(4px + .2em);
+  padding-top: .2em;
   text-align: center;
 
   color: #DDD;
   text-shadow: 2px 2px #000A;
   box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+}
+.minecraft-button .minecraft-button-title span {
+  vertical-align: middle;
 }
 
