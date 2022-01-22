@@ -1,8 +1,3 @@
-![Alt text](/img/dc.png?raw=true "DoggyCraft")
-#Official DoggyCraft GitHub Page
+![Alt text](/img/dc_banner.webp?raw=true "DoggyCraft")
 
-## To-Do
-* ?
-
-### Contributers
-* Fido/Hero (GitHub and alot of freaking updates, k?)
+# Official DoggyCraft Webpage

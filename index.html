@@ -10,12 +10,12 @@
 		<title>DoggyCraft - Et anderledes community!</title>
 		<meta property="og:site_name" content="DoggyCraft">
 		<meta name="application-name" content="DoggyCraft">
-		<meta property="og:title" content="DoggyCraft - Et anderledes community!">
-		<meta name="description" content="DoggyCraft is a community where you can get to meet and play, with your friends and gather new friends!">
-		<meta name="og:description" content="DoggyCraft is a community where you can get to meet and play, with your friends and gather new friends!">
+		<meta property="og:title" content="DoggyCraft - Ren hygge!">
+		<meta name="description" content="DoggyCraft is a community where you can get to meet and play with your friends and gain new friends, even when you're away from home!">
+		<meta name="og:description" content="DoggyCraft is a community where you can get to meet and play with your friends and gain new friends, even when you're away from home!">
 		<meta name="author" content="DoggyCraft">
-		<meta name="theme-color" content="#5865F2">
-		<meta name="msapplication-TileColor" content="#5865F2">
+		<meta name="theme-color" content="#C7BCBA">
+		<meta name="msapplication-TileColor" content="#C7BCBA">
 		<meta property="og:url" content="https://doggycraft.dk">
 		<link rel="canonical" href="https://doggycraft.dk">
 
@@ -131,52 +131,12 @@
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<!-- Custom scripts -->
-		<script src="js/main.js"></script>
 		<!-- Bootstrap Javascript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<!-- FitText -->
 		<script src="js/jquery.fittext.js"></script>
-
-		<script>
-			$(".minecraft-input-box-text").fitText(2.4);
-			$(".minecraft-input-text").fitText(3);
-			$(".minecraft-input-box-button-title").fitText(0.3);
-
-			$(".minecraft-input-box-button").click(function(){
-				if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
-					navigator.clipboard.writeText("doggycraft.dk")
-							.then(() => {
-								alert("Copied the address!");
-							})
-							.catch(() => {
-								alert("Could not copy the address...");
-							});
-				}
-				else {
-					alert("Could not copy the address...");
-				}
-			});
-
-			$(".discord-button").click(function(){
-				window.open("https://discord.gg/5zR89pv", '_blank');
-			});
-			$(".twitch-button").click(function(){
-				window.open("https://twitch.tv/doggycraftdk", '_blank');
-			});
-			$(".youtube-button").click(function(){
-				window.open("https://youtube.com/DoggyCraftDK", '_blank');
-			});
-			$(".vote-button").click(function(){
-				window.open("https://minecraftlist.dk/vote/1804653e-0879-4198-860a-765600031e18", '_blank');
-				window.open("https://minecraftlist.org/vote/1577", '_blank');
-				window.open("https://minecraftservers.org/vote/211341", '_blank');
-				window.open("https://minecraft-server-list.com/server/290100/vote/", '_blank');
-				window.open("https://minecraft-server.net/vote/DogOnFire/", '_blank');
-				window.open("https://minecraft-mp.com/server/75843/vote/", '_blank');
-				window.open("https://minecraftlist.dk/vote/1804653e-0879-4198-860a-765600031e18", '_blank');
-			});
-		</script>
+		<!-- Custom scripts -->
+		<script src="js/main.js"></script>
 	</body>
 </html>
